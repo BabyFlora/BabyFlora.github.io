@@ -948,8 +948,8 @@ footer:not(.dark_bg) a {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     font-size: 0;
     text-indent: -9999px;
     box-shadow: none;
@@ -990,7 +990,7 @@ footer:not(.dark_bg) a {
 .hamburger-menu-btn span {
     display: block;
     position: absolute;
-    top: 5px;
+    top: 25px;
     left: 5px;
     right: 5px;
     height: 1px;

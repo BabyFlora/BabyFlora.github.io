@@ -122,21 +122,28 @@
                                                 <div class="bg-pink mb_40">
                                                       <div class="px-5-percent pt_20" style="padding-bottom: 5px;">
                                                             <p style="font-size: 14px;">Hai bisogno di aiuto? Non esitare a contattarci alla mail: <a href="mailto:babyflorabrand@gmail.com">babyflorabrand@gmail.com</a><br>
-                                                            Se hai problemi con le taglie puoi consultare la nostra <a href="guida-taglie.html">GUIDA TAGLIE</a></p>
+                                                            Se hai problemi con le taglie puoi consultare la nostra <span><a href="guida-taglie.html">GUIDA TAGLIE</a></span></p>
                                                       </div> 
                                                             
                                                 </div>
-                                                <div class="single-product-price">€150.00</div>
+                                                <div class="row">
+                                                      <div class="col-md-6">
+                                                            <div class="single-product-price">€150.00</div> 
+                                                      </div>
+                                                      
+                                                </div>
+                                               
 
                                                 
-                                                     <div id="smart-button-container">
+                                                    <!--  <div id="smart-button-container">
                                                             <div style="text-align: center;">
+                                                                  
                                                               <div id="paypal-button-container"></div>
                                                             </div>
-                                                          </div>
+                                                          </div>-->
                                                        
-                                                        <!--  <form id="whatsAppAnyForm" class="contact-form" action="#" method="POST"
-                                                          data-title="Nuovo ordine per il prodotto: NOMEPRODOTTO " novalidate>
+                                                         <form id="whatsAppAnyForm" class="contact-form" action="#" method="POST"
+                                                          data-title="Nuovo ordine per il prodotto: STEFANIA " novalidate>
                                                                 
                                                                 <div class="form-group row">
                                                                       <div class="col-sm-6 col-xs-12">
@@ -149,25 +156,42 @@
                                                                                   class="validate-required validate-email">
                                                                       </div>
                                                                 </div>
+                                                                <label>Seleziona taglia:</label>
+
                                                                 <div class="form-group row">
-                                                                  <div class="col-sm-6 col-xs-12">
-                                                                      <label>Seleziona taglia:</label>
-                                                                      <select id="taglia" name="taglia" class="whatsappForm-input" placeholder="Taglia" required>
-                                                                        <option value="12 - 18 mesi">12 - 18 mesi</option>
-                                                                        <option value="18 - 24 mesi">18 - 24 mesi</option>
-                                                                        <option value="1 -2 anni">1 -2 anni</option>
-                                                                    </select>
+                                                                  <div class="col-sm-12 col-xs-12">
+                                                                  <div class="radioselection">
+                                                                      <span class="radio">
+                                                                          <span class="radiolabel">0 -2 mesi</span>
+                                                                          <input type="radio" id="taglia" name="taglia" value="0-2 mesi" class="whatsappForm-select"
+                                                                              placeholder="Taglia" required />
+                                              
+                                                                      </span>
+                                                                      <span class="radio">
+                                                                          <span class="radiolabel">3 - 4 mesi</span>
+                                                                          <input type="radio" id="taglia" name="taglia" value="3-4 mesi" class="whatsappForm-select"
+                                                                              placeholder="Taglia" required />
+                                              
+                                                                      </span>
+                                                                      <span class="radio">
+                                                                        <span class="radiolabel">6 - 8 mesi</span>
+                                                                        <input type="radio" id="taglia" name="taglia" value=" 6-8 mesi" class="whatsappForm-select"
+                                                                            placeholder="Taglia" required />
+                                            
+                                                                    </span>
                                                                   </div>
-                                                                  <div class="col-sm-6 col-xs-12">
+                                                              </div></div>
+                                                              <div class="form-group row">
+                                                                  <div class="col-sm-12 col-xs-12">
                                                                         <label>Indirizzo:</label>
                                                                         <input type="text" id="indirizzo" name="indirizzo"
                                                                               class="validate-required validate-email">
-                                                                  </div>
-                                                            </div>
+                                                                  </div></div>
+                                                            
                                                                 <div class="form-group row">
                                                                       <div class="col-sm-12 col-xs-12">
-                                                                            <label>Message:</label>
-                                                                            <textarea rows="8" name="message" id="message"
+                                                                            <label>Messaggio:</label>
+                                                                            <textarea rows="4" name="message" id="message"
                                                                                   class="validate-required"></textarea>
                                                                       </div>
                                                                 </div>
@@ -179,7 +203,7 @@
                                                                 </div>
                                                                 <div class="loading-spinner"></div>
                                                                 <div class="messages"></div>
-                                                          </form> -->
+                                                          </form> 
                                                       
                                           </div>
                                     </div>
@@ -218,7 +242,7 @@
                                                 <div class="col-lg-4 align-right">
                                                       <ul class="list-inline">
                                                             <li>
-                                                                  <a href="https://www.facebook.com/#">
+                                                                  <a href="https://www.facebook.com/profile.php?id=100087288639148">
                                                                         <i class="fa fa-facebook"
                                                                               aria-hidden="true"></i>
                                                                   </a>
@@ -248,7 +272,7 @@
     paypal.Buttons({
       style: {
         shape: 'rect',
-        color: 'gold',
+        color: 'silver',
         layout: 'vertical',
         label: 'paypal',
         

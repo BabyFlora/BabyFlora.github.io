@@ -130,68 +130,78 @@
                                                 <div class="single-product-price">€200.00</div>
 
                                                 
-                                                <form id="whatsAppAnyForm" class="contact-form" action="#" method="POST"
-                                                data-title="Nuovo ordine per il prodotto: FLORA MARIA " novalidate>
-                                                      
-                                                      <div class="form-group row">
-                                                            <div class="col-sm-6 col-xs-12">
-                                                                  <label>Nome e Cognome:</label>
-                                                                  <input type="text" id="name" name="name" placeholder="Name" required>
-                                                            </div>
-                                                            <div class="col-sm-6 col-xs-12">
-                                                                  <label>Email:</label>
-                                                                  <input type="email" id="useremail" name="useremail"
-                                                                        class="validate-required validate-email">
-                                                            </div>
+                                                <div class="card">
+                                                      <div class="card-header" role="tab" id="headingOne">
+                                                      <h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Acquista
+                                                      </a></h5>
                                                       </div>
-                                                      <label>Seleziona taglia:</label>
-
-                                                      <div class="form-group row">
-                                                        <div class="col-sm-12 col-xs-12">
-                                                        <div class="radioselection">
-                                                            <span class="radio">
-                                                                <span class="radiolabel">0 -2 mesi</span>
-                                                                <input type="radio" id="taglia" name="taglia" value="0-2 mesi" class="whatsappForm-select"
-                                                                    placeholder="Taglia" required />
-                                    
-                                                            </span>
-                                                            <span class="radio">
-                                                                <span class="radiolabel">3 - 4 mesi</span>
-                                                                <input type="radio" id="taglia" name="taglia" value="3-4 mesi" class="whatsappForm-select"
-                                                                    placeholder="Taglia" required />
-                                    
-                                                            </span>
-                                                            <span class="radio">
-                                                              <span class="radiolabel">6 - 8 mesi</span>
-                                                              <input type="radio" id="taglia" name="taglia" value=" 6-8 mesi" class="whatsappForm-select"
-                                                                  placeholder="Taglia" required />
-                                  
-                                                          </span>
-                                                        </div>
-                                                    </div></div>
-                                                    <div class="form-group row">
-                                                        <div class="col-sm-12 col-xs-12">
-                                                              <label>Indirizzo:</label>
-                                                              <input type="text" id="indirizzo" name="indirizzo"
-                                                                    class="validate-required validate-email">
-                                                        </div></div>
-                                                  
-                                                      <div class="form-group row">
-                                                            <div class="col-sm-12 col-xs-12">
-                                                                  <label>Messaggio:</label>
-                                                                  <textarea rows="4" name="message" id="message"
-                                                                        class="validate-required"></textarea>
-                                                            </div>
+                                                      <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                      <div class="card-block">
+                                                            <form id="whatsAppAnyForm" class="contact-form" action="#" method="POST"
+                                                            data-title="Nuovo ordine per il prodotto: FLORA MARIA " novalidate>
+                                                                  
+                                                                  <div class="form-group row">
+                                                                        <div class="col-sm-6 col-xs-12">
+                                                                              <label>Nome e Cognome:</label>
+                                                                              <input type="text" id="name" name="name" placeholder="Name" required>
+                                                                        </div>
+                                                                        <div class="col-sm-6 col-xs-12">
+                                                                              <label>Email:</label>
+                                                                              <input type="email" id="useremail" name="useremail"
+                                                                                    class="validate-required validate-email">
+                                                                        </div>
+                                                                  </div>
+                                                                  <label>Seleziona taglia:</label>
+  
+                                                                  <div class="form-group row">
+                                                                    <div class="col-sm-12 col-xs-12">
+                                                                    <div class="radioselection">
+                                                                        <span class="radio">
+                                                                            <span class="radiolabel">0 -2 mesi</span>
+                                                                            <input type="radio" id="taglia" name="taglia" value="0-2 mesi" class="whatsappForm-select"
+                                                                                placeholder="Taglia" required />
+                                                
+                                                                        </span>
+                                                                        <span class="radio">
+                                                                            <span class="radiolabel">3 - 4 mesi</span>
+                                                                            <input type="radio" id="taglia" name="taglia" value="3-4 mesi" class="whatsappForm-select"
+                                                                                placeholder="Taglia" required />
+                                                
+                                                                        </span>
+                                                                        <span class="radio">
+                                                                          <span class="radiolabel">6 - 8 mesi</span>
+                                                                          <input type="radio" id="taglia" name="taglia" value=" 6-8 mesi" class="whatsappForm-select"
+                                                                              placeholder="Taglia" required />
+                                              
+                                                                      </span>
+                                                                    </div>
+                                                                </div></div>
+                                                                <div class="form-group row">
+                                                                    <div class="col-sm-12 col-xs-12">
+                                                                          <label>Indirizzo:</label>
+                                                                          <input type="text" id="indirizzo" name="indirizzo"
+                                                                                class="validate-required validate-email">
+                                                                    </div></div>
+                                                              
+                                                                  <div class="form-group row">
+                                                                        <div class="col-sm-12 col-xs-12">
+                                                                              <label>Messaggio:</label>
+                                                                              <textarea rows="4" name="message" id="message"
+                                                                                    class="validate-required"></textarea>
+                                                                        </div>
+                                                                  </div>
+                                                                  <div id="whatsappFormResponse"></div>
+                                                                  <div class="form-group row">
+                                                                        <div class="col-sm-12 col-xs-12 align-right mt-3">
+                                                                              <button type="Submit" id="whatsappFormSubmit" class="btn btn-default">Invia Ordine</button>
+                                                                        </div>
+                                                                  </div>
+                                                                  <div class="loading-spinner"></div>
+                                                                  <div class="messages"></div>
+                                                            </form> 
                                                       </div>
-                                                      <div id="whatsappFormResponse"></div>
-                                                      <div class="form-group row">
-                                                            <div class="col-sm-12 col-xs-12 align-right mt-3">
-                                                                  <button type="Submit" id="whatsappFormSubmit" class="btn btn-default">Invia Ordine</button>
-                                                            </div>
                                                       </div>
-                                                      <div class="loading-spinner"></div>
-                                                      <div class="messages"></div>
-                                                </form> 
+                                                      </div>
                                                       
                                           </div>
                                     </div>

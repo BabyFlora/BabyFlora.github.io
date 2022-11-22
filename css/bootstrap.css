@@ -13,6 +13,8 @@ html {
 }
 
 body {
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0
 }
 
@@ -351,6 +353,8 @@ html {
 }
 
 body {
+    max-width: 100%;
+    overflow-x: hidden;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     font-size: 1rem;
     font-weight: 400;

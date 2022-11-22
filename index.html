@@ -21,6 +21,46 @@
 
       <link href="css/aos.css" rel="stylesheet">
 
+      <style>
+            /* Center the loader */
+            #loader {
+                  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url('images/logo_splash.png') 
+  
+              50% 50% no-repeat rgb(249,249,249);
+              
+            }
+            
+            
+            /* Add animation to "page content" */
+            .animate-bottom {
+              position: relative;
+              -webkit-animation-name: animatebottom;
+              -webkit-animation-duration: 1s;
+              animation-name: animatebottom;
+              animation-duration: 1s
+            }
+            
+            @-webkit-keyframes animatebottom {
+              from { bottom:-100px; opacity:0 } 
+              to { bottom:0px; opacity:1 }
+            }
+            
+            @keyframes animatebottom { 
+              from{ bottom:-100px; opacity:0 } 
+              to{ bottom:0; opacity:1 }
+            }
+            
+            #myDiv {
+              display: none;
+              text-align: center;
+            }
+            </style>
 
       <script type='text/javascript'>
             (function (I, L, T, i, c, k, s) { if (I.iticks) return; I.iticks = { host: c, settings: s, clientId: k, cdn: L, queue: [] }; var h = T.head || T.documentElement; var e = T.createElement(i); var l = I.location; e.async = true; e.src = (L || c) + '/client/inject-v2.min.js'; h.insertBefore(e, h.firstChild); I.iticks.call = function (a, b) { I.iticks.queue.push([a, b]); }; })(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'CgQ8kMayo5cSrfsL3_c', {});
@@ -29,7 +69,11 @@
 
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+
+      <div id="loader"></div>
+      
+      <div style="display:none;" id="myDiv" class="animate-bottom">
       <div class="px-5-percent" style="border-bottom: 1px solid #E5BCC1; ">
             <div class="row align-center" style="margin-bottom: -16px; margin-top: 5px;">
                   <div class="col-md-12 ">
@@ -319,6 +363,19 @@
       <script type="text/javascript" src="js/plugins.min.js"></script>
       <script type="text/javascript" src="js/jquery.smoothState.min.js"></script>
       <script type="text/javascript" src="js/main.js"></script>
+
+      <script>
+            var myVar;
+            
+            function myFunction() {
+              myVar = setTimeout(showPage, 1000);
+            }
+            
+            function showPage() {
+              document.getElementById("loader").style.display = "none";
+              document.getElementById("myDiv").style.display = "block";
+            }
+            </script>
 </body>
 
 </html>

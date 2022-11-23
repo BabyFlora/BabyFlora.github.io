@@ -65,7 +65,4 @@ $result = file_get_contents($url, false, $options);
 print_r($result);
 }
 
-
-
-
  ?>
